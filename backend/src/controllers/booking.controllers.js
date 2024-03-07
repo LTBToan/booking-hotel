@@ -488,7 +488,7 @@ exports.updatedBookingOrderByAdmin = async (req, res) => {
             'FAILED',
             'This booking cannot be `in-reviews` as it is no longer in the `approved` status'
           ));
-        }
+        }   
         break;
       default:
         return res.status(400).json(errorResponse(
