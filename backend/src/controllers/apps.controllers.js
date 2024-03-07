@@ -16,7 +16,7 @@ exports.getDashboardData = async (req, res) => {
       ));
     }
 
-    // finding all users data from database
+    // finding all users data from database. 
     const totalUsers = await User.find();
 
     if (!totalUsers) {
