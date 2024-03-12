@@ -9,7 +9,7 @@ const {
 // route for create new room
 router.route('/create-room').post(isAuthenticatedUser, isAdmin, roomImageUpload.array('room_images', 5), createRoom);
 
-// routes for get all, single and featured rooms list
+// routes for get all, single and featured rooms list 
 router.route('/all-rooms-list').get(getRoomsList);
 router.route('/get-room-by-id-or-slug-name/:id').get(getRoomByIdOrSlugName);
 router.route('/featured-rooms-list').get(getFeaturedRoomsList);
