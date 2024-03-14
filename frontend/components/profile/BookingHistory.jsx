@@ -1,5 +1,3 @@
-
-
 import { ExclamationCircleFilled, SortAscendingOutlined, SortDescendingOutlined } from '@ant-design/icons';
 import {
   Button, Modal, Rate, Result, Space, Table, Tag, Tooltip
@@ -118,6 +116,15 @@ function BookingHistory() {
             },
             {
               key: 3,
+              title: 'Booking By',
+              dataIndex: 'booking_by',
+              render: (data) => (
+                <span>{data?.fullName}</span>
+              ),
+              align: 'center'
+            },
+            {
+              key: 4,
               title: 'Booking Status',
               dataIndex: 'booking_status',
               render: (data) => (
@@ -128,7 +135,7 @@ function BookingHistory() {
               align: 'center'
             },
             {
-              key: 4,
+              key: 5,
               title: 'Review & Ratting',
               dataIndex: 'reviews',
               render: (data) => (
@@ -147,7 +154,7 @@ function BookingHistory() {
               align: 'center'
             },
             {
-              key: 5,
+              key: 6,
               title: 'Actions',
               dataIndex: 'actions',
               render: (_, record) => (
