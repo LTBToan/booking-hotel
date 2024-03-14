@@ -7,7 +7,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { persistor, store } from './store';
 import antTheme from './utils/theme';
-
 import 'antd/dist/reset.css';
 import './index.css';
 

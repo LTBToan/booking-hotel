@@ -9,12 +9,12 @@ function Home() {
   return (
     <div className='h-screen flex flex-col items-center justify-center'>
       <Result
+        icon={<SmileOutlined />}
         title={(
           <h2 className='text-lg font-text-font font-medium md:text-3xl'>
             Welcome to Beach Resort Admin Panel!
           </h2>
         )}
-        icon={<SmileOutlined />}
         extra={(
           <Link to='/main/dashboard'>
             <Button
