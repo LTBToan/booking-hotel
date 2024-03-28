@@ -1,6 +1,5 @@
 const currentDateTime = require('../lib/current.date.time');
 const getDateAfterDuration = require('../lib/get.date.after.duration');
-   
 /**
  * function to success response login user with JWT access and refresh token
  * @param {*} res node/express app res objects

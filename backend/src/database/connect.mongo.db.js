@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 const logger = require('../middleware/winston.logger');
 
-const connectionString ="mongodb+srv://dbUser:dbUserPassword@nodeapi.mtlvl.mongodb.net/?retryWrites=true&w=majority";
+const connectionString = 'mongodb+srv://dbUser:dbUserPassword@nodeapi.mtlvl.mongodb.net/?retryWrites=true&w=majority';
+
 mongoose.set('strictQuery', false);
 const connectDatabase = async () => {
   try {
