@@ -68,7 +68,6 @@ function Users() {
 
   return (
     <Tabs
-      onChange={(key) => setActiveKey(key)}
       tabBarExtraContent={(
         <Button
           className='inline-flex items-center'
@@ -80,6 +79,7 @@ function Users() {
           Create User
         </Button>
       )}
+      onChange={(key) => setActiveKey(key)}
       activeKey={activeKey}
       type='editable-card'
       onEdit={onEdit}

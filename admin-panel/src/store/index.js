@@ -11,7 +11,7 @@ const rootReducer = combineReducers({
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: [] // only that's reducer will be persisted
+  whitelist: [appSlices] // only that's reducer will be persisted
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
