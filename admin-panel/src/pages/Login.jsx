@@ -15,18 +15,17 @@ function Login() {
   const [errMsg, setErrMsg] = useState('');
 
   // timeout callback
-  const [timeout] = useTimeout(() => {
+  const [clearMgs] = useTimeout(() => {
     setErrMsg('');
   }, 2000);
 
-  timeout();
+  clearMgs();
 
   // function to handle user login
   const onFinish = async (values) => {
     try {
       setLoading(true);
       const response = await ApiService.post('/api/v1/auth/login?loginType=admin', values);
-
       if (response?.result_code === 0) {
         setSessionUserAndToken(response?.result?.data, response?.access_token, response?.refresh_token);
         window.location.href = '/main/dashboard';
@@ -41,7 +40,6 @@ function Login() {
       setLoading(false);
     }
   };
-
   return (
     <section className='flex flex-col h-screen items-center justify-center'>
       <div className='w-[90%] md:w-[450px]'>

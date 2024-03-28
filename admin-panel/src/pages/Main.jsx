@@ -196,7 +196,7 @@ function Main() {
             {/* <img
               className='w-[280px] h-[65px] mx-auto'
               alt='beach-resort-logo'
-              src={Logo}
+              src="/"
             /> */}
           </Link>
 

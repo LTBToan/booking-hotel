@@ -23,5 +23,5 @@ export default function useTimeout(callback, delay) {
     [delay, timeoutRef, callbackRef]
   );
 
-  return useMemo(() => [memoizedCallback]);
+  return useMemo(() => [memoizedCallback], [memoizedCallback]);
 }
